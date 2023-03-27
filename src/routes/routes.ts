@@ -1,20 +1,20 @@
 import { Router } from "express";
 import {
-    getUser,
-    getUsers,
-    createUser,
-    updateUser,
-    deleteUser,
-    getPost,
-    getPosts,
-    createPost,
-    updatePost,
-    deletePost,
-    getProfile,
-    getProfiles,
-    createProfile,
-    updateProfile,
-    deleteProfile,
+  getUser,
+  getUsers,
+  createUser,
+  updateUser,
+  deleteUser,
+  getPost,
+  getPosts,
+  createPost,
+  updatePost,
+  deletePost,
+  getProfile,
+  getProfiles,
+  createProfile,
+  updateProfile,
+  deleteProfile,
 } from "../services/controllers";
 const router = Router();
 
@@ -30,8 +30,8 @@ router.post("/posts", createPost);
 router.put("/posts/:id", updatePost);
 router.delete("/posts/:id", deletePost);
 
-router.get("/profile", getProfile);
-router.get("/profile/:id", getProfiles);
+router.get("/profile", getProfiles);
+router.get("/profile/:id", getProfile);
 router.post("/profile", createProfile);
 router.put("/profile/:id", updateProfile);
 router.delete("/profile/:id", deleteProfile);
