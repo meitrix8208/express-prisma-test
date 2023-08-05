@@ -5,13 +5,13 @@ import {
   createProfile,
   updateProfile,
   deleteProfile,
-} from "../services/post.controllers";
+} from "../controllers/post.controllers";
 
 const router = Router();
-router.get("/profile", getProfiles);
-router.get("/profile/:id", getProfile);
-router.post("/profile", createProfile);
-router.put("/profile/:id", updateProfile);
-router.delete("/profile/:id", deleteProfile);
+router.get("/profiles", getProfiles);
+router.get("/profiles/:id", getProfile);
+router.post("/profiles", createProfile);
+router.put("/profiles/:id", updateProfile);
+router.delete("/profiles/:id", deleteProfile);
 
 export default router;

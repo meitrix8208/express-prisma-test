@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import prisma from "./db";
+import prisma from "../services/db";
 //! ------------users----------------
 export const getUsers = async (_req: Request, res: Response) => {
   const users = await prisma.user.findMany();

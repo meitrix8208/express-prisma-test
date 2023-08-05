@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import prisma from "./db";
+import prisma from "../services/db";
 //! ------------profile----------------
 export const getProfiles = async (_req: Request, res: Response) => {
   const profiles = await prisma.profile.findMany();

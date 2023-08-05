@@ -5,7 +5,7 @@ import {
   createPost,
   updatePost,
   deletePost,
-} from "../services/post.controllers";
+} from "../controllers/post.controllers";
 const router = Router();
 
 router.get("/posts", getPosts);
