@@ -12,6 +12,9 @@ export const getUser = async (req: Request, res: Response) => {
     where: {
       id: Number(id),
     },
+    include: {
+      posts: true,
+    }
   });
   res.json(user);
 };

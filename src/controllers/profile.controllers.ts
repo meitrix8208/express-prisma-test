@@ -12,6 +12,9 @@ export const getProfile = async (req: Request, res: Response) => {
     where: {
       id: Number(id),
     },
+    include: {
+      user: true,
+    },
   });
   res.json(profile);
 };

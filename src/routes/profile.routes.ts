@@ -5,7 +5,7 @@ import {
   createProfile,
   updateProfile,
   deleteProfile,
-} from "../controllers/post.controllers";
+} from "../controllers/profile.controllers";
 
 const router = Router();
 router.get("/profiles", getProfiles);
