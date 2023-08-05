@@ -1,12 +1,9 @@
-import { port } from "./app";
-import app from "./app";
-import router from "./routes/routes";
+import app, { PORT } from "./app";
+
 app.get("/ping", (_req, res) => {
-    res.send("Hello World!");
+  res.status(200).send();
 });
 
-app.use("/api",router );
-
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
